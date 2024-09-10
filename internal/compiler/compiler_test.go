@@ -95,7 +95,7 @@ func TestCompiler(t *testing.T) {
 				{Type: lexer.TokenEOF},
 			},
 			expected: []bytecode.Instruction{
-				bytecode.PackInstruction(bytecode.OpResolveLoad, 0, 1, 0), // Updated this line
+				bytecode.PackInstruction(bytecode.OpResolveLoad, 0, 1, 0),
 				bytecode.PackInstruction(bytecode.OpCall, 0, 0, 0),
 				bytecode.PackInstruction(bytecode.OpHalt, 0, 0, 0),
 			},

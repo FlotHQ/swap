@@ -163,7 +163,6 @@ func (l *Lexer) peek() byte {
 	return l.input[l.pos+1]
 }
 
-// Inline these functions for better performance
 func isLetter(ch byte) bool {
 	return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || ch == '_'
 }
